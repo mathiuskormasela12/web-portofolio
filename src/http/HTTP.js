@@ -1,6 +1,6 @@
 class HTTP {
 	connect(method, endpoint, data, auth) {
-		return fetch('http://127.0.0.1:3000/api' + endpoint, {
+		return fetch('https://mathius-kormasela-api.herokuapp.com/api' + endpoint, {
 			method: method.toUpperCase(),
 			headers: {
 				"auth": auth
