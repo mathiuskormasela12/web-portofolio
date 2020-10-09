@@ -1,28 +1,66 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div id="app">
+		<router-view />	
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+	
+	export default {
+		name: 'App',	
+	}
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	
+	@font-face {
+		src: url('assets/fonts/Poppins-Regular.ttf');
+		font-family: poppins;
+	}	
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+  html {
+		font-size: 16px;
+		scroll-behavior: smooth;
+	}
+
+	#app {
+		font-family: poppins;
+		background-color: white;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+	
+	h2 {
+		font-size: 2.8rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	h4 {
+		font-size: 2.2rem;
+	}
+
+	h5 {
+		font-size: 2rem;
+	}
+
+	h6 {
+		font-size: 1.8rem;
+	}
+
 </style>
