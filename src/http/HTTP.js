@@ -1,6 +1,6 @@
 class HTTP {
 	connect(method, endpoint, data, auth) {
-		return fetch('https://mathius-kormasela-api.herokuapp.com/api' + endpoint, {
+		return fetch('https://web-portolio-api.glitch.me/api' + endpoint, {
 			method: method.toUpperCase(),
 			headers: {
 				"auth": auth
